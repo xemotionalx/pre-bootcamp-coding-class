@@ -1,3 +1,5 @@
+/* reset */
+
 *,
 *::after,
 *::before {
@@ -13,12 +15,13 @@ html {
 body {
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
-    background-color: #ECC1EE;
+    background-color: #fff;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
     font-size: 1.4rem;
+    font-family: 'Work Sans', sans-serif;
 }
 
 li {
@@ -30,8 +33,26 @@ a {
 }
 
 h1 {
-    letter-spacing: 2px;
+    font-size: 6rem;
 }
+
+h2 {
+    font-size: 2.2rem;
+    font-family: 'Work Sans', sans-serif;
+    color: #554346;
+}
+
+h3 {
+    font-size: 5rem;
+}
+
+h1, h3, h4 {
+    letter-spacing: .5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #3f3335;
+}
+
+/* navbar */
 
 .navbar {
     z-index: 100;
@@ -65,17 +86,71 @@ h1 {
     height: 4rem;
 }
 
-.container {
-    background-color: white;
-    padding: 5rem;
-    margin: 0 auto;
-    width: 80rem;
+/* header */
+.header {
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(300deg, #F05AE5, #C5C6FF);
 }
 
-.header-logo {
-    width: 18rem;
+.header__text {
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
 }
+
+.header__text, h2 {
+    margin-top: 3rem;
+}
+
+.header__text, button {
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+/* section */
+.section {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(0deg, #C5C6FF 0%, #fff 46%);
+    padding-top: 14rem;
+}
+
+/* utility class */
 
 .text-center {
     text-align: center;
+}
+
+/* button */
+
+button {
+    background-color: transparent;
+    border-radius: 5rem;
+    border: 3px solid;
+    max-width: 30rem;
+    padding: 1.5rem 2.5rem;
+    flex: auto;
+    align-items: center;
+}
+
+button i {
+    vertical-align: middle;
+    font-size: 3rem;
+    margin-right: .8rem;
+}
+
+button span {
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.btn-white {
+    border-color: #fff;
+    color: #fff;
 }
