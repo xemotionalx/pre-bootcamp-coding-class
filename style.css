@@ -14,14 +14,14 @@ html {
 
 body {
     box-sizing: border-box;
-    font-family: 'Nunito Sans', sans-serif;
     background-color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-family: 'Work Sans', sans-serif;
+    line-height: 200%;
+    margin-top: 3rem;
 }
 
 li {
@@ -119,6 +119,24 @@ h1, h3, h4 {
     width: 100%;
     background: linear-gradient(0deg, #C5C6FF 0%, #fff 46%);
     padding-top: 14rem;
+}
+
+.section__about {
+    min-height: 50rem;
+    margin-top: 5rem;
+}
+
+.section__about-text {
+    float: left;
+    padding: 2rem;
+    width: 60%;
+    padding-left: 10rem;
+}
+
+.section__about-img {
+    float: right;
+    height: 50rem;
+    vertical-align: middle;
 }
 
 /* utility class */
