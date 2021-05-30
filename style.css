@@ -162,6 +162,53 @@ section {
     padding: 0 1rem;
 }
 
+/* footer */
+
+/* FOOTER */
+.footer {
+    background: linear-gradient(300deg, #F05AE5, #C5C6FF); 
+    padding: 3rem 10rem;
+    text-align: center;
+}
+
+ .footer__logobox {
+    margin: 0 auto;
+}
+
+.footer__logobox-img {
+    height: 8rem;
+}
+
+.footer__logobox-text {
+    height: 2rem;
+}
+
+.footer__socials {
+    color: white;
+    margin: 2.5rem 0;
+    font-size: 3rem;
+}
+
+.footer__socials-icon {
+    margin-right: 1rem;
+}
+
+.footer__copyright {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.footer p {
+    font-size: 1.4rem;
+    color: #554346;
+    line-height: 100%;
+    margin-top: 1rem;
+}
+
+.footer a {
+    color: white;
+}
+
 /* layout */
 .grid-container {
     max-width: 80rem;
@@ -180,7 +227,6 @@ section {
 }
 
 /* RE-USABLE COMPONENTS */
-
 /* card */
 .card {
   background-color: #fff;
