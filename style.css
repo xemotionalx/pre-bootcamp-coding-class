@@ -46,6 +46,10 @@ h3 {
     font-size: 5rem;
 }
 
+h4 {
+    font-size: 3rem;
+}
+
 h1, h3, h4 {
     letter-spacing: .5rem;
     font-family: 'Montserrat', sans-serif;
@@ -98,7 +102,7 @@ h1, h3, h4 {
     position: absolute;
     width: 80%;
     left: 50%;
-    top: 40%;
+    top: 45%;
     transform: translate(-50%, -50%);
     text-align: center;
     width: 90%;
@@ -151,15 +155,79 @@ section {
     vertical-align: middle;
 }
 
-/* utility class */
-/* 
-.text-center {
-    text-align: center;
+/* resources section */
+.section__resources {
+    min-height: 50rem;
+    margin-top: 10rem;
+    padding: 0 1rem;
 }
 
-.margin-0 {
+/* layout */
+.grid-container {
+    max-width: 80rem;
     margin: 0 auto;
-} */
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 5rem;
+    grid-row-gap: 10rem;
+}
+
+.grid-item  {
+    text-align: center;
+    margin: 0 auto;
+    width: 30rem;
+    height: 40rem;
+}
+
+/* RE-USABLE COMPONENTS */
+
+/* card */
+.card {
+  background-color: #fff;
+  box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,0.2);
+  border-radius: .5rem;
+  width: 30rem;
+  height: 40rem;
+  margin: 0 auto;
+}
+
+.card__img {
+    height: 30rem;
+    background-size: cover;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+.card__img-html {
+    background-image: linear-gradient(300deg, rgb(240, 90, 229, .7), rgb(197, 198, 255, .7)), url('images/cards/html.jpg');
+}
+
+.card__img-css {
+    background-image: linear-gradient(300deg, rgb(240, 90, 229, .7), rgb(197, 198, 255, .7)), url('images/cards/css.jpg');
+}
+
+.card__img-javascript {
+    background-image: linear-gradient(300deg, rgb(240, 90, 229, .7), rgb(197, 198, 255, .7)), url('images/cards/javascript.jpg');
+}
+
+.card__img-design {
+    background-image: linear-gradient(300deg, rgb(240, 90, 229, .7), rgb(197, 198, 255, .7)), url('images/cards/design.jpg');
+}
+
+.card__text {
+    width: 100%;
+    height: 10rem;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.card__text h4 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
 /* button */
 
