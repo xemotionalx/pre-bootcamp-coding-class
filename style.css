@@ -108,11 +108,11 @@ h1, h3, h4 {
     width: 90%;
 }
 
-.header__text, h2 {
+.header__text h2 {
     margin-top: 3rem;
 }
 
-.header__text, button {
+.header__text button {
     margin: 0 auto;
     margin-top: 5rem;
 }
@@ -235,6 +235,7 @@ section {
   width: 30rem;
   height: 40rem;
   margin: 0 auto;
+  overflow: none;
 }
 
 .card__img {
@@ -274,6 +275,77 @@ section {
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
+.card__links {
+    display: none;
+    border-radius: .5rem;
+    width: 100%;
+    height: 100%;
+    padding-top: 3rem;
+
+    background: linear-gradient(to bottom, rgba(197, 198, 255, 0), rgba(240,90,229,0.1), rgba(197, 198, 255, .5), rgba(240,90,229,0.2), #C5C6FF, rgba(240,90,229,0.3));
+    background-size: 400% 400%;
+
+    /* animation */
+    animation: gradientFadeIn 5s ease forwards;
+
+}
+
+.card__links li {
+    margin-top: 2rem;
+    opacity: 0;
+
+    /* animation */
+    animation: listItemsFadeIn 2.5s linear forwards;
+    animation-delay: 3.5s;
+}
+
+.card__links h4 {
+    opacity: 0;
+
+    /* animation */
+    animation: listItemsFadeIn 3s linear forwards;
+    animation-delay: 2.5s;
+}
+
+/* card animations */
+
+@keyframes gradientFadeIn {
+    0% {
+        background-position: 100% 0%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+@keyframes listItemsFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* @keyframes fadeInDown {
+    0% { */
+       /* opacity: 0; */
+       /* background: linear-gradient(to bottom, rgba(197,198,255,1) 0%, rgba(240,90,229,0) 3%);  */
+    /* }
+    50% { */
+        /* background: linear-gradient(to bottom, rgba(197,198,255,1) 0%, rgba(240,90,229,0.30155812324929976) 44%, rgba(240,90,229,0) 100%); */
+    /* }
+    100% { */
+       /* opacity: 1; */
+       /* background: linear-gradient(to bottom, #C5C6FF 0%, rgba(240,90,229,0.5) 69%);  */
+    /* }
+ }  */
+
 
 /* button */
 
