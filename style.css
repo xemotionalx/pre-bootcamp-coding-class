@@ -12,6 +12,18 @@ html {
   font-size: 62.5%;
 }
 
+@media only screen and (max-width: 500px) {
+    html {
+        font-size: 50%;
+      }
+  }
+
+  @media only screen and (max-width: 400px) {
+    html {
+        font-size: 45%;
+      }
+  }
+
 body {
     box-sizing: border-box;
     background-color: #fff;
@@ -24,6 +36,12 @@ p {
     margin-top: 3rem;
 }
 
+@media only screen and (max-width: 400px) {
+    p {
+        font-size: 2.2rem;
+      }
+  }
+
 li {
     list-style: none;
 }
@@ -35,6 +53,12 @@ a {
 h1 {
     font-size: 6rem;
 }
+
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 5rem;
+       }
+    }
 
 h2 {
     font-size: 2.2rem;
@@ -161,6 +185,26 @@ section {
     text-align: center;
 }
 
+@media only screen and (max-width: 1250px) {
+    .section__about-text {
+        width: 100%;
+        float: none;
+        display: block;
+    }
+
+    .section__about-img {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .section__about-text {
+        padding-left: 2rem;
+    }
+  }
+
 /* resources section */
 .section__resources {
     min-height: 50rem;
@@ -235,6 +279,15 @@ section {
     width: 30rem;
     height: 40rem;
 }
+
+@media only screen and (max-width: 1250px) {
+    .grid-container {
+        max-width: 90rem;
+        grid-template-columns: auto;
+        grid-column-gap: 5rem;
+        grid-row-gap: 5rem;
+    }
+  }
 
 /* RE-USABLE COMPONENTS */
 /* card */
@@ -346,6 +399,11 @@ section {
     border-radius: 2.5rem;
     padding: .8rem;
     margin-bottom: 1rem;
+}
+
+.card__links a:hover {
+    color: #FFF;
+    border-color: #FFF;
 }
 
 /* card animations */
