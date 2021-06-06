@@ -163,7 +163,9 @@ section {
 
 .section__about {
     min-height: 50rem;
+    margin: 0 auto;
     margin-top: 5rem;
+    max-width: 136rem;
 }
 
 .section__about-text {
