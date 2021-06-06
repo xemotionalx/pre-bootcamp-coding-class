@@ -112,7 +112,7 @@ h1, h3, h4 {
     margin-top: 3rem;
 }
 
-.header__text button {
+.header button {
     margin: 0 auto;
     margin-top: 5rem;
 }
@@ -153,6 +153,12 @@ section {
     float: right;
     height: 50rem;
     vertical-align: middle;
+}
+
+.section__about-cta {
+    width: 100%;
+    padding-top: 5rem;
+    text-align: center;
 }
 
 /* resources section */
@@ -209,6 +215,10 @@ section {
     color: white;
 }
 
+.footer a:hover {
+    color: #F05AE5;
+}
+
 /* layout */
 .grid-container {
     max-width: 80rem;
@@ -237,6 +247,13 @@ section {
   height: 40rem;
   margin: 0 auto;
   overflow: none;
+  transition: all .3s ease-in-out;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+    transform: translate3d(0px, -.5px, 0px);
 }
 
 .card__img {
@@ -354,13 +371,12 @@ section {
     }
 }
 
-
 /* button */
 
 button {
+    cursor: pointer;
     background-color: transparent;
     border-radius: 5rem;
-    border: 3px solid;
     max-width: 30rem;
     padding: 1.5rem 2.5rem;
     flex: auto;
@@ -379,6 +395,17 @@ button span {
 }
 
 .btn-white {
-    border-color: #fff;
-    color: #fff;
+    border: 3px solid #FFF;
+    color: #FFF;
+}
+
+.btn:hover {
+    background: linear-gradient(300deg, #F05AE5, #C5C6FF);
+    border: 3px solid #FFF;
+    color: #FFF;
+}
+
+.btn-pink {
+    border: 3px solid #F05AE5;
+    color: #F05AE5;
 }
